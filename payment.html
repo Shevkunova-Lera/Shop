@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="card">
+		<form class="payment-card">
+		<h1 class="payment-card__title">Card details</h1>
+		<div class="payment-card__field payment-card__field--large">
+		  <label for="card-number" class="payment-card__field-label">Card number</label>
+		  <input class="payment-card__input payment-card__input--large" id="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" />
+		</div>
+		<div class="payment-card__extra-fields">
+		  <div class="payment-card__field payment-card__field--small">
+			<label for="card-expiry" class="payment-card__field-label">Expiry date</label>
+			<input class="payment-card__input" inputmode="numeric" id="card-expiry" placeholder="xx/xx" />
+		  </div>
+		  <div class="payment-card__field payment-card__field--small">
+			<label for="card-ccv" class="payment-card__field-label">CCV</label>
+			<input class="payment-card__input" inputmode="numeric" id="card-ccv" placeholder="xxx" />
+		  </div>
+		</div>
+		
+	  </form>
+	  <a href="thankful.html" class="back">Оплатить</a>
+	</div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
